@@ -24,3 +24,11 @@ change ip address:
 change port:
 ` -e NODEPORT=3000`
 
+
+## Troubleshoting
+
+check you can telnet to 5672 `telnet localhost 5672`
+
+if not, check rabbitmq-server started and running `docker exec -it CONT_ID /bin/bash` `ps -aux`
+ 
+if not, start it `rabbitmq-server` 
