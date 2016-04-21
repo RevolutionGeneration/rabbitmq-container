@@ -6,7 +6,7 @@ fi
 
 
 if [ "$NODEIP" != "" ] ; then
-    sed -ri "s/NODE_IP_ADDRESS=0.0.0.0/NODE_IP_ADDRESS=$NODEIP/g" /etc/rabbitmq/rabbitmq-env.conf;
+    sed -ri "s/NODE_IP_ADDRESS=127.0.0.1/NODE_IP_ADDRESS=$NODEIP/g" /etc/rabbitmq/rabbitmq-env.conf;
 fi
 
 
